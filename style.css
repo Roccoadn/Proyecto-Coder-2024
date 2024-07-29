@@ -238,7 +238,7 @@ footer{
     margin-right: auto;
     margin-left: auto;
     font-weight: light;
-    width: 420px;
+    max-width: 420px;
     background-color: #4A4E69;
     border: 2px solid rgba(255, 255, 255, .2);
     color: #ffff;
