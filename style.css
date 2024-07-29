@@ -4,6 +4,11 @@
 
 /* Estilos Home */
 
+.letras_nav{
+    font-weight: bolder;
+    margin-right: 5px;
+}
+
 .imagen_bienvenida{
     background-image: url(images/hero.jpg);
     height: 90vh;
@@ -81,7 +86,7 @@ footer{
     display: grid;
     grid-template-rows: repeat 50px 50px 150px;
     row-gap: 55px;
-    background-color: #4a4e69;
+    background-color: #353535;
 }
 
 .logo_footer{
@@ -385,13 +390,25 @@ footer{
 @media screen and (min-width: 768px){
 
     /* Media Q Home */
+
+    .proyectos_terminados{
+        margin: 5rem 0;
+        grid-template-rows: 400px 75px;
+        row-gap: 15px;
+    }
+
+    .proyectos_terminados_home img{
+        width: 100%;
+        max-height: 400px;
+    }
+
     .sponsors_home_container{
         display: flex;
         justify-content: space-around;
     }
     .sponsors_home_container img{
-        width: 100%;
-        height: 150px;
+        max-width: 100%;
+        max-height: 150px;
     }
     /* Media Q Home */
 
@@ -459,9 +476,7 @@ footer{
     }
 
     .proyectos_terminados img{
-        padding-left: 1rem;
-        padding-right: 1rem;
-        width: 30rem;
+        width: 30rem ;
     }
 
     .proyectos_terminados_home_texto_img{
@@ -479,7 +494,6 @@ footer{
         grid-template-columns: repeat(3, 3fr);
         grid-template-rows: 1fr;
         align-items: center;
-        background-color: #4a4e69;
     }
     
     .logo_footer{
