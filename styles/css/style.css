@@ -452,7 +452,7 @@ h2 {
 }
 
 .imagen_bienvenida {
-  background-image: url(/images/hero.jpg);
+  background-image: url(images/hero.jpg);
   display: flex;
   justify-content: center;
   text-align: center;
