@@ -9,6 +9,7 @@
 }
 
 .seccion_servicios{
+    margin: 200px 0;
     @include desktop {
         margin: 200px 0;
     }
@@ -19,18 +20,28 @@
             display: flex;
         }
         h2{
-            margin: 0;
-            text-align: left;
-            padding-bottom: 2rem;
-            font-size: xxx-large;
-            font-family: "DM Sans", sans-serif;
+            display: none;
+            @include desktop{
+                display: block;
+                margin: 0;
+                padding: 1rem 0;
+                font-size: xxx-large;
+                font-family: "DM Sans", sans-serif;
+                text-align: left;
+            }
         }
         h3{
             font-size: xx-large;
+            text-align: center;
             padding-bottom: 1.5rem;
+            @include tablet{
+                text-align: left;
+            }
         }
         img{
-            display: none;
+            width: 100%;
+            margin: 20px 0;
+            border: 1px solid #eeeeee;
             @include tablet{
                 display: block;
                 width: 100%;
@@ -41,15 +52,6 @@
                 margin-right: 5rem;
                 padding-left: 5%;
                 width: 30rem;
-            }
-        }
-        .black{
-            padding: 40px;
-            background-color: #080808;
-            color: #e4e8eb;
-            @include desktop{
-                background-color: transparent;
-                color: black;
             }
         }
     }

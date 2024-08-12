@@ -7,11 +7,12 @@
     @include hero;
 }
 
-.imagen_y_texto{
+.texto{
     padding: 50px;
     text-align: justify;
-    img{
-        display: none;
+    font-weight: bold;
+    @include desktop{
+        padding: 100px;
     }
 }
 

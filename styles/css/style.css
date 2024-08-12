@@ -15,6 +15,9 @@
   font-family: "DM Sans", sans-serif;
 }
 
+.seccion_servicios {
+  margin: 200px 0;
+}
 @media screen and (min-width: 992px) {
   .seccion_servicios {
     margin: 200px 0;
@@ -30,18 +33,32 @@
   }
 }
 .seccion_servicios .servicio h2 {
-  margin: 0;
-  text-align: left;
-  padding-bottom: 2rem;
-  font-size: xxx-large;
-  font-family: "DM Sans", sans-serif;
+  display: none;
+}
+@media screen and (min-width: 992px) {
+  .seccion_servicios .servicio h2 {
+    display: block;
+    margin: 0;
+    padding: 1rem 0;
+    font-size: xxx-large;
+    font-family: "DM Sans", sans-serif;
+    text-align: left;
+  }
 }
 .seccion_servicios .servicio h3 {
   font-size: xx-large;
+  text-align: center;
   padding-bottom: 1.5rem;
 }
+@media screen and (min-width: 768px) {
+  .seccion_servicios .servicio h3 {
+    text-align: left;
+  }
+}
 .seccion_servicios .servicio img {
-  display: none;
+  width: 100%;
+  margin: 20px 0;
+  border: 1px solid #eeeeee;
 }
 @media screen and (min-width: 768px) {
   .seccion_servicios .servicio img {
@@ -56,17 +73,6 @@
     margin-right: 5rem;
     padding-left: 5%;
     width: 30rem;
-  }
-}
-.seccion_servicios .servicio .black {
-  padding: 40px;
-  background-color: #080808;
-  color: #e4e8eb;
-}
-@media screen and (min-width: 992px) {
-  .seccion_servicios .servicio .black {
-    background-color: transparent;
-    color: black;
   }
 }
 
@@ -88,12 +94,15 @@
   font-family: "DM Sans", sans-serif;
 }
 
-.imagen_y_texto {
+.texto {
   padding: 50px;
   text-align: justify;
+  font-weight: bold;
 }
-.imagen_y_texto img {
-  display: none;
+@media screen and (min-width: 992px) {
+  .texto {
+    padding: 100px;
+  }
 }
 
 .nuestra_mision {
@@ -144,7 +153,7 @@
 
 .contactanos {
   background-color: #080808;
-  color: #e4e8eb;
+  color: white;
   padding: 150px 50px;
 }
 .contactanos .mapa {
@@ -154,18 +163,30 @@
 .contactanos .mapa iframe {
   width: 100%;
 }
-@media screen and (min-width: 768px) {
-  .contactanos .mapa .texto_mapa {
-    text-align: center;
-    margin-top: 8rem;
-    display: flex;
-    justify-content: space-around;
-  }
+.contactanos h2 {
+  color: white;
+  font-family: "DM Sans", sans-serif;
+  margin: 5rem 0;
+  text-align: center;
 }
-@media screen and (min-width: 768px) {
-  .contactanos .mapa .texto_mapa div {
-    width: 25%;
-  }
+.contactanos .texto_mapa {
+  text-align: center;
+  margin: 5rem 0;
+  display: flex;
+  flex-direction: column;
+}
+.contactanos form {
+  background-color: #333;
+  padding: 20px;
+  border: #717380 solid 1px;
+  border-radius: 14px;
+}
+.contactanos form label {
+  font-family: "Nunito", sans-serif;
+  color: #080808;
+}
+.contactanos form .form-check label {
+  color: white;
 }
 
 .contenedor_form {
@@ -272,7 +293,7 @@
 }
 
 .proyecto {
-  margin: 10rem 0;
+  margin: 15rem 0;
   padding: 5%;
 }
 .proyecto img {
@@ -283,6 +304,9 @@
   .imagenes_proyecto {
     display: flex;
   }
+}
+.imagenes_proyecto img {
+  border: 1px solid #eeeeee;
 }
 .imagenes_proyecto .img-num {
   display: none;
@@ -542,6 +566,8 @@ h2 {
   }
 }
 .imagen_bienvenida h1 {
+  margin-left: 3rem;
+  margin-right: 3rem;
   color: white;
   padding-top: 30%;
   text-align: center;
@@ -551,18 +577,24 @@ h2 {
 }
 
 .lo_que_ofrecemos_home {
-  margin-bottom: 150px;
+  margin: 10rem 0;
+}
+.lo_que_ofrecemos_home h2 {
+  margin-bottom: 10rem;
 }
 .lo_que_ofrecemos_home .lo_que_ofrecemos_container {
   text-align: center;
   display: grid;
+  row-gap: 4rem;
   grid-template-rows: repeat(3, 40%);
   grid-template-columns: 1fr;
-  margin: 0px 40px;
+  margin: 0 40px;
+  margin-bottom: 20rem;
 }
 @media screen and (min-width: 992px) {
   .lo_que_ofrecemos_home .lo_que_ofrecemos_container {
-    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
   }
 }
 @media screen and (min-width: 992px) {
@@ -601,12 +633,12 @@ h2 {
 .proyectos_terminados_home img {
   width: 100%;
   max-height: 250px;
-  border: #2d3436 2px solid;
+  border: #2d3436 1px solid;
 }
 @media screen and (min-width: 768px) {
   .proyectos_terminados_home img {
     width: 100%;
-    max-height: 400px;
+    max-height: 420px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -615,24 +647,17 @@ h2 {
   }
 }
 .proyectos_terminados_home .proyectos_terminados {
-  display: grid;
-  grid-template-rows: repeat(2, 250px);
-  row-gap: 15px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
   text-align: center;
   text-align: justify;
-}
-@media screen and (min-width: 768px) {
-  .proyectos_terminados_home .proyectos_terminados {
-    margin: 5rem 0;
-    grid-template-rows: 400px 75px;
-    row-gap: 15px;
-  }
+  margin: 10rem 0;
 }
 @media screen and (min-width: 992px) {
   .proyectos_terminados_home .proyectos_terminados {
-    display: flex;
-    margin-top: 5rem;
-    margin-bottom: 10rem;
+    flex-direction: row;
+    margin: 15rem 0;
   }
 }
 @media screen and (min-width: 992px) {
@@ -650,6 +675,7 @@ h2 {
   margin-bottom: 10rem;
   text-align: center;
   row-gap: 5rem;
+  margin-top: 8rem;
 }
 .sponsors_home_container img {
   max-width: 120px;

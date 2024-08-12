@@ -7,8 +7,8 @@
     @include hero;
 }
 .contactanos{
-    background-color: #080808;
-    color: #e4e8eb;
+    background-color: $color-secundario;
+    color: $color-principal;
     padding: 150px 50px;
     .mapa{
         margin-left: auto;
@@ -16,17 +16,31 @@
         iframe{
             width: 100%;
         }
-        .texto_mapa{
-            @include tablet{
-                text-align: center;
-                margin-top: 8rem;
-                display: flex;
-                justify-content: space-around;
-            }
-            div{
-                @include tablet{
-                    width: 25%;
-                }
+    }
+    h2{
+        color: $color-principal;
+        font-family: $font-secundaria;
+        margin: 5rem 0;
+        text-align: center;
+    }
+    .texto_mapa{
+        text-align: center;
+        margin: 5rem 0;
+        display: flex;
+        flex-direction: column;
+}
+    form{
+        background-color: #333;
+        padding: 20px;
+        border: #717380 solid 1px;
+        border-radius: 14px;
+        label{
+            font-family: $font-principal;
+            color: $color-secundario;
+        }
+        .form-check{
+            label{
+                color: $color-principal;
             }
         }
     }

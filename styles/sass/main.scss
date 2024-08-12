@@ -35,6 +35,8 @@ h2{
         @include flecha;
     }
     h1{
+        margin-left: 3rem;
+        margin-right: 3rem;
         color: #ffff;
         padding-top: 30%;
         text-align: center;
@@ -46,15 +48,21 @@ h2{
 }
 
 .lo_que_ofrecemos_home{
-    margin-bottom: 150px;
+    margin: 10rem 0;
+    h2{
+        margin-bottom: 10rem;
+    }
     .lo_que_ofrecemos_container{
         text-align: center;
         display: grid;
+        row-gap: 4rem;
         grid-template-rows: repeat(3, 40%);
         grid-template-columns: 1fr;
-        margin: 0px 40px;
+        margin: 0 40px;
+        margin-bottom: 20rem;
         @include desktop { 
-            display: flex;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 1fr;
         }
         .lo_que_ofrecemos{
             @include desktop {
@@ -91,30 +99,25 @@ h2{
     img{
         width: 100%;
         max-height: 250px;
-        border: #2d3436 2px solid;
+        border: #2d3436 1px solid;
         @include tablet {
             width: 100%;
-            max-height: 400px;
+            max-height: 420px;
         }
         @include desktop {
             width: 30rem;
         }
     }
     .proyectos_terminados{
-        display: grid;
-        grid-template-rows: repeat(2, 250px);
-        row-gap: 15px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
         text-align: center;
         text-align: justify;
-        @include tablet {
-            margin: 5rem 0;
-            grid-template-rows: 400px 75px;
-            row-gap: 15px;
-        }
+        margin: 10rem 0;
         @include desktop {
-            display: flex;
-            margin-top: 5rem;
-            margin-bottom: 10rem;
+            flex-direction: row;
+            margin: 15rem 0;
         }
         .proyectos_terminados_home_texto_img{
            @include desktop{
@@ -132,6 +135,7 @@ h2{
         margin-bottom: 10rem;
         text-align: center;
         row-gap: 5rem;
+        margin-top: 8rem;
     img{
         max-width: 120px;
         max-height: 100px;

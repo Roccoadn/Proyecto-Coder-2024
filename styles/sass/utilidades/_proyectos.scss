@@ -8,7 +8,7 @@
 }
 
 .proyecto{
-    margin: 10rem 0;
+    margin: 15rem 0;
     padding: 5%;
     img{
         width: 100%;
@@ -18,6 +18,9 @@
 .imagenes_proyecto{
     @include desktop{
         display: flex;
+    }
+    img{
+        border: 1px solid #eeeeee;
     }
     .img-num{
         display: none;
