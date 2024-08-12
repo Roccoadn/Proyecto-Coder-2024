@@ -144,7 +144,7 @@
 /* Estilos nosotros.html */
 /* Estilos contacto.html */
 .contacto {
-  background-image: url("/images/hero-contacto.jpg");
+  background-image: url(../../images/hero-contacto.jpg);
   height: 100vh;
   background-position: center;
   background-size: cover;
