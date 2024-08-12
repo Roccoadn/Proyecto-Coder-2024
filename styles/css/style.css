@@ -1,6 +1,6 @@
 /* Estilos servicios.html */
 .nuestros_servicios {
-  background-image: url(/images/hero-servicios.jpg);
+  background-image: url(../../../images/hero-servicios.jpg);
   height: 100vh;
   background-position: center;
   background-size: cover;
@@ -79,7 +79,7 @@
 /* Estilos servicios.html */
 /* Estilos nosotros.html */
 .sobre_nosotros {
-  background-image: url(/images/hero-sobre-nosotros.jpg);
+  background-image: url(../../../images/hero-sobre-nosotros.jpg);
   height: 100vh;
   background-position: center;
   background-size: cover;
@@ -136,7 +136,7 @@
 /* Estilos nosotros.html */
 /* Estilos contacto.html */
 .contacto {
-  background-image: url(/images/hero-contacto.jpg);
+  background-image: url(../../../images/hero-contacto.jpg);
   height: 100vh;
   background-position: center;
   background-size: cover;
@@ -277,7 +277,7 @@
 /* Estilos contacto.html */
 /* Estilos proyectos.html */
 .hero-proyectos {
-  background-image: url(/images/hero-proyectos.jpg);
+  background-image: url(../../../images/hero-proyectos.jpg);
   height: 100vh;
   background-position: center;
   background-size: cover;
@@ -452,7 +452,7 @@ h2 {
 }
 
 .imagen_bienvenida {
-  background-image: url(images/hero.jpg);
+  background-image: url(../../images/hero.jpg);
   display: flex;
   justify-content: center;
   text-align: center;
