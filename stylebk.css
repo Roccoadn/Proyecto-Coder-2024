@@ -71,14 +71,14 @@ h2{
 }
 
 .sponsors_home_container img{
-    width: 100%;
+    max-width: 100%;
 }
 
 .sponsors_home_container{
     display: grid;
     grid-template-rows: repeat(2, 50%);
     grid-template-columns: repeat(2, 50%);
-    padding-bottom: 30px;
+    margin-bottom: 5rem;
 }
 
 footer{
@@ -239,13 +239,13 @@ footer{
 }
 
 
-.wrapper{
+.contenedor_form{
     margin-top: 10rem;
     margin-right: auto;
     margin-left: auto;
     font-weight: light;
     max-width: 420px;
-    background-color: #4A4E69;
+    background-color: #717380;
     border: 2px solid rgba(255, 255, 255, .2);
     color: #ffff;
     border-radius: 10px;
@@ -546,7 +546,7 @@ footer{
 
     /* Media Q Servicios */
 
-    /* Media Q Servicios */
+    /* Media Q Nosotros */
 
     .nuestra_mision{
         display: flex;
@@ -556,7 +556,7 @@ footer{
         width: 400px;
     }
 
-    /* Media Q Servicios */
+    /* Media Q Nosotros */
 
     /* Media Q Proyectos */
     .img-letra{

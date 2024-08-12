@@ -1,0 +1,133 @@
+@import "utilidades/servicios";
+@import "utilidades/nosotros";
+@import "utilidades/contacto";
+@import "utilidades/proyectos";
+@import "utilidades/footer";
+@import "utilidades/mixin";
+@import "utilidades/variables";
+
+
+
+.letras_nav{
+    font-weight: bolder;
+    margin-right: 5px;
+}
+
+h2{
+    font-family: $font-secundaria;
+    color: $color-secundario;
+    margin: 50px 0;
+    font-size: xx-large;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.imagen_bienvenida{
+    background-image: url(/images/hero.jpg);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    @include hero;
+    .flecha{
+        margin-top: 5rem;
+        @include flecha;
+        font-size: xx-large;
+    }
+}
+
+.lo_que_ofrecemos_home{
+    margin-bottom: 150px;
+    .lo_que_ofrecemos_container{
+        text-align: center;
+        display: grid;
+        grid-template-rows: repeat(3, 40%);
+        grid-template-columns: 1fr;
+        margin: 0px 40px;
+        @include desktop { 
+            display: flex;
+        }
+        .lo_que_ofrecemos{
+            @include desktop {
+                padding: 0.5rem;
+                text-align: center;
+                h3{
+                    @include desktop {
+                        margin-top: 4rem;
+                        font-size: 1.17em;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.proyectos_terminados_home{
+    padding: 5px;
+    color: $color-principal;
+    background-color: #1c1f20;
+    background-image: linear-gradient(315deg, #191d1f 0%, #000000 74%);
+    width: 100%;
+    padding: 30px 25px;
+    h2{
+        color: $color-principal;
+    }
+    span{
+        display: none;
+        @include desktop {
+            display: block;
+        }
+    }
+    img{
+        width: 100%;
+        max-height: 250px;
+        border: #2d3436 2px solid;
+        @include tablet {
+            width: 100%;
+            max-height: 400px;
+        }
+        @include desktop {
+            width: 30rem;
+        }
+    }
+    .proyectos_terminados{
+        display: grid;
+        grid-template-rows: repeat(2, 250px);
+        row-gap: 15px;
+        text-align: center;
+        text-align: justify;
+        @include tablet {
+            margin: 5rem 0;
+            grid-template-rows: 400px 75px;
+            row-gap: 15px;
+        }
+        @include desktop {
+            display: flex;
+            margin-top: 5rem;
+            margin-bottom: 10rem;
+        }
+        .proyectos_terminados_home_texto_img{
+           @include desktop{
+            margin-left: 30px;
+            margin-right: 30px;
+            text-align: justify;
+           }
+        }
+    }
+}
+.sponsors_home_container{
+        display: grid;
+        grid-template-rows: repeat(2, 50%);
+        grid-template-columns: repeat(2, 50%);
+        margin-bottom: 10rem;
+        text-align: center;
+        row-gap: 5rem;
+    img{
+        max-width: 120px;
+        max-height: 100px;
+    }
+    @include tablet{
+        display: flex;
+        justify-content: space-around;
+    }
+}

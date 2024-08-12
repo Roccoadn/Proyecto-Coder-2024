@@ -1,0 +1,35 @@
+@import "mixin";
+@import "variables";
+
+footer{
+    padding-top: 50px;
+    display: grid;
+    grid-template-rows: repeat 50px 50px 150px;
+    row-gap: 55px;
+    background: rgb(95,94,94);
+    background: linear-gradient(180deg, rgba(95,94,94,1) 0%, rgba(54,54,54,1) 94%);
+    @include desktop {
+        padding-top: 20px;
+        grid-template-columns: repeat(3, 3fr);
+        grid-template-rows: 1fr;
+        align-items: center;
+    }
+    .logo_footer{
+        text-align: center;
+    }
+    .contacto_footer{
+        text-align: center;
+        .numero_y_calle_footer{
+            display: flex;
+            justify-content: space-around;
+            color: #e4e8eb;
+        }
+    }
+    .redes_footer{
+        display: flex;
+        img{
+            width: 100%;
+        }
+    }
+}
+

@@ -1,0 +1,42 @@
+@import "mixin";
+@import "variables";
+/* Estilos nosotros.html */
+
+.sobre_nosotros{
+    background-image: url(/images/hero-sobre-nosotros.jpg);
+    @include hero;
+}
+
+.imagen_y_texto{
+    padding: 50px;
+    text-align: justify;
+    img{
+        display: none;
+    }
+}
+
+.nuestra_mision{
+    text-align: center;
+    background-color: #080808;
+    color: #e4e8eb;
+    padding: 50px;
+    padding-top: 150px;
+    @include desktop{
+        display: flex;
+        justify-content: space-around;
+    }
+    h3{
+        padding-bottom: 15px;
+        font-size: xx-large;
+        font-family: "DM Sans", sans-serif;
+        text-align: center;
+    }
+    p{
+        padding-bottom: 100px;
+        @include desktop{
+            width: 400px;
+        }
+    }
+}
+
+/* Estilos nosotros.html */

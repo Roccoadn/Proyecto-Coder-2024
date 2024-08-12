@@ -1,0 +1,77 @@
+@import "mixin";
+@import "variables";
+/* Estilos proyectos.html */
+
+.hero-proyectos{
+    background-image: url(/images/hero-proyectos.jpg);
+    @include hero;
+}
+
+.proyecto{
+    margin: 10rem 0;
+    padding: 5%;
+    img{
+        width: 100%;
+    }
+}
+
+.imagenes_proyecto{
+    @include desktop{
+        display: flex;
+    }
+    .img-num{
+        display: none;
+        @include tablet{
+            display: block;
+        }
+        img{
+            @include tablet{
+                width: 100%;
+            }
+        }
+    }
+    .img-letra{
+        @include tablet{
+            display: none;    
+        }
+        @include desktop{
+            padding-right: 1rem;
+            display: block;
+        }
+    }
+}
+.texto_proyecto{
+    margin-bottom: 5rem;
+    @include desktop{
+        width: 100%;
+        display: flex;
+    }
+    p{
+        font-family: $font-principal;
+        font-weight: bolder;
+        display: none;
+        @include desktop{
+            margin: 0;
+            margin-top: 2.5rem;
+            padding-left: 5rem;
+            padding-right: 5rem;
+            display: block;
+        }
+    }
+    h2{
+        font-family: $font-secundaria;
+        @include desktop{
+            font-size: 1.5em;
+            padding-left: 10%;
+            text-align: start;
+            padding-right: 5rem;
+        }
+    }
+}
+
+.segundo{ 
+    background-color: $color-principal;
+    color: $color-secundario;
+}
+
+/* Estilos proyectos.html */
