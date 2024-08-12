@@ -144,7 +144,7 @@
 /* Estilos nosotros.html */
 /* Estilos contacto.html */
 .contacto {
-  background-image: url(../../..//images/hero-contacto.jpg);
+  background-image: url("/images/hero-contacto.jpg");
   height: 100vh;
   background-position: center;
   background-size: cover;
@@ -628,7 +628,7 @@ h2 {
   height: 300px;
   border-radius: 30px;
   background: #D9E4E6;
-  box-shadow: 15px 15px 30px #c2cdcf, -15px -15px 30px #ffffff;
+  box-shadow: 15px 15px 30px #c2cdcf -15px -15px 30px #ffffff;
 }
 @media screen and (min-width: 992px) {
   .lo_que_ofrecemos_home .lo_que_ofrecemos_container .lo_que_ofrecemos {
