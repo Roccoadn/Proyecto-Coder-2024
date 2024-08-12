@@ -27,12 +27,22 @@ h2{
     display: flex;
     justify-content: center;
     text-align: center;
-    @include hero;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
     .flecha{
-        margin-top: 5rem;
         @include flecha;
-        font-size: xx-large;
     }
+    h1{
+        color: #ffff;
+        padding-top: 30%;
+        text-align: center;
+        font-size: xxx-large;
+        font-weight: bolder;
+        font-family: "DM Sans", sans-serif;
+    }
+
 }
 
 .lo_que_ofrecemos_home{

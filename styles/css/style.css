@@ -351,37 +351,66 @@
 
 /* Estilos proyectos.html */
 footer {
-  padding-top: 50px;
-  display: grid;
-  grid-template-rows: repeat 50px 50px 150px;
-  row-gap: 55px;
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5rem;
   background: rgb(95, 94, 94);
   background: linear-gradient(180deg, rgb(95, 94, 94) 0%, rgb(54, 54, 54) 94%);
 }
 @media screen and (min-width: 992px) {
   footer {
-    padding-top: 20px;
-    grid-template-columns: repeat(3, 3fr);
-    grid-template-rows: 1fr;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
   }
 }
 footer .logo_footer {
   text-align: center;
 }
-footer .contacto_footer {
+footer .logo_footer img {
+  cursor: pointer;
+}
+footer .links_footer {
+  display: none;
+}
+@media screen and (min-width: 992px) {
+  footer .links_footer {
+    display: block;
+  }
+}
+footer .links_footer ul {
+  display: flex;
   text-align: center;
 }
-footer .contacto_footer .numero_y_calle_footer {
-  display: flex;
-  justify-content: space-around;
-  color: #e4e8eb;
+footer .links_footer ul li {
+  list-style: none;
+  margin: 0 15px;
+}
+footer .links_footer ul li a {
+  color: white;
+  text-decoration: none;
+}
+footer .links_footer ul li a:hover {
+  text-decoration: underline;
 }
 footer .redes_footer {
   display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
-footer .redes_footer img {
-  width: 100%;
+footer .redes_footer a {
+  font-size: 2.5rem;
+  color: white;
+}
+@media screen and (min-width: 992px) {
+  footer .redes_footer a {
+    font-size: 1.5rem;
+    margin: 0 20px;
+  }
+}
+footer .redes_footer a:hover {
+  color: #a3a3a3;
 }
 
 .letras_nav {
@@ -408,19 +437,11 @@ h2 {
   background-size: cover;
   background-attachment: fixed;
 }
-.imagen_bienvenida h1 {
-  color: white;
-  padding-top: 16rem;
-  text-align: center;
-  font-size: xxx-large;
-  font-weight: bolder;
-  font-family: "DM Sans", sans-serif;
-}
 .imagen_bienvenida .flecha {
   margin-top: 5rem;
+  font-size: xx-large;
   -webkit-animation: bounce-top 2s ease-in-out infinite;
   animation: bounce-top 2s ease-in-out infinite;
-  font-size: xx-large;
 }
 @-webkit-keyframes bounce-top {
   0% {
@@ -519,6 +540,14 @@ h2 {
     animation-timing-function: ease-out;
     opacity: 1;
   }
+}
+.imagen_bienvenida h1 {
+  color: white;
+  padding-top: 30%;
+  text-align: center;
+  font-size: xxx-large;
+  font-weight: bolder;
+  font-family: "DM Sans", sans-serif;
 }
 
 .lo_que_ofrecemos_home {

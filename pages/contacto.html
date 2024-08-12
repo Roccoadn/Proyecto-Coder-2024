@@ -11,7 +11,10 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://kit.fontawesome.com/4e9d07a5c0.js" crossorigin="anonymous"></script>
+    
     <link rel="stylesheet" href="/styles/css/style.css">
     
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -48,7 +51,7 @@
                     <a class="nav-link letras_nav" href="nosotros.html">Nosotros</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link letras_nav" href="contacto.html">Contactos</a>
+                    <a class="nav-link letras_nav active" aria-current="page" href="contacto.html">Contactos</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link letras_nav" href="proyectos.html">Proyectos</a>
@@ -109,33 +112,14 @@
         </div>
 
 
-        <div class="contenedor_form">
-            <form action="">
-                <h1>Iniciar sesión</h1>
-
-                <div class="input-box">
-                    <input type="text" placeholder="Nombre de usuario" required>
-                    <i class='bx bxs-user'></i>
-                </div>
-
-                <div class="input-box">
-                    <input type="password" placeholder="Contraseña" required>
-                    <i class='bx bxs-lock-alt'></i>
-                </div>
-
-                <div class="recuerdame-olvide">
-                    <label><input type="checkbox">Recuerdame</label>
-                    <a href="">Olvide mi contraseña</a>
-                </div>
-
-                <button  type="submit" class="btn">Ingresar</button>
-
-                <div class="register-link">
-                    <p>No tienes cuenta? <a href="#">Registrarme</a></p> 
-                </div>
-
-            </form>
-        </div>
+        <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">Email address</label>
+          </div>
+          <div class="form-floating">
+            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+            <label for="floatingPassword">Password</label>
+          </div>
 
     </section>
 
@@ -148,62 +132,40 @@
 
         </div>
 
-        <div class="contacto_footer">
+        <div class="links_footer">
 
-            <div>
-
-                <a href="contacto.html">Contacto</a>
-
-                <div class="numero_y_calle_footer">
-
-                    <div>
-
-                        <p>
-                            11 2233-4455
-                        </p>
-    
-                    </div>
-    
-                    <div>
-    
-                        <p>
-                            Calle falsa 123
-                        </p>
-    
-                    </div>
-
-                </div>
-
-            </div>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+            </ul>
 
         </div>
 
         <div class="redes_footer">
 
             <div class="facebook_footer">
-                <a href="">
-                    
-                    <img src="/images/facebook-icon.png" alt="facebook_icon">
 
+                <a href="https://www.facebook.com/">
+                    <i class="fa-brands fa-facebook"></i>
                 </a>
+
             </div>
 
             <div class="instagram_footer">
 
-                <a href="">
-
-                    <img src="/images/instagram-icon.png" alt="instagram_icon">
-
+                <a href="https://www.instagram.com/">
+                    <i class="fa-brands fa-instagram"></i>
                 </a>
 
             </div>
             
             <div class="linkedin_footer">
 
-                <a href="">
-
-                    <img src="/images/linkedin-icon.png" alt="linkedin_icon">
-
+                <a href="https://linkedin.com/">
+                    <i class="fa-brands fa-linkedin-in"></i>
                 </a>
 
             </div>
@@ -213,6 +175,9 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
