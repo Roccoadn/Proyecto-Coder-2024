@@ -108,9 +108,20 @@
 .nuestra_mision {
   text-align: center;
   background-color: #080808;
-  color: #e4e8eb;
+  color: #080808;
   padding: 50px;
   padding-top: 150px;
+}
+.nuestra_mision .nuestra_container {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10rem;
+  padding: 1.5rem;
+  width: 400px;
+  height: 450px;
+  border-radius: 30px;
+  background: #D9E4E6;
+  box-shadow: 0px 0px 20px 19px rgba(194, 205, 207, 0.2);
 }
 @media screen and (min-width: 992px) {
   .nuestra_mision {
@@ -119,18 +130,15 @@
   }
 }
 .nuestra_mision h3 {
-  padding-bottom: 15px;
+  padding: 1.5rem 0;
   font-size: xx-large;
   font-family: "DM Sans", sans-serif;
   text-align: center;
 }
 .nuestra_mision p {
+  text-align: justify;
+  padding: 0 30px;
   padding-bottom: 100px;
-}
-@media screen and (min-width: 992px) {
-  .nuestra_mision p {
-    width: 400px;
-  }
 }
 
 /* Estilos nosotros.html */
@@ -163,6 +171,11 @@
 .contactanos .mapa iframe {
   width: 100%;
 }
+@media screen and (min-width: 992px) {
+  .contactanos .mapa iframe {
+    height: 500px;
+  }
+}
 .contactanos h2 {
   color: white;
   font-family: "DM Sans", sans-serif;
@@ -176,17 +189,27 @@
   flex-direction: column;
 }
 .contactanos form {
-  background-color: #333;
+  background-color: #D9E4E6;
   padding: 20px;
   border: #717380 solid 1px;
   border-radius: 14px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .contactanos form label {
   font-family: "Nunito", sans-serif;
   color: #080808;
 }
-.contactanos form .form-check label {
-  color: white;
+.contactanos form button {
+  background-color: #080808;
+  border: white 1px solid;
+}
+.contactanos form button:hover {
+  background-color: #D9E4E6;
+  color: #080808;
+  transition: 1.5s;
+  border: #333 1px solid;
 }
 
 .contenedor_form {
@@ -597,18 +620,31 @@ h2 {
     grid-template-rows: 1fr;
   }
 }
+.lo_que_ofrecemos_home .lo_que_ofrecemos_container .lo_que_ofrecemos {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem;
+  width: 350px;
+  height: 300px;
+  border-radius: 30px;
+  background: #D9E4E6;
+  box-shadow: 15px 15px 30px #c2cdcf, -15px -15px 30px #ffffff;
+}
 @media screen and (min-width: 992px) {
   .lo_que_ofrecemos_home .lo_que_ofrecemos_container .lo_que_ofrecemos {
     padding: 0.5rem;
     text-align: center;
   }
 }
-@media screen and (min-width: 992px) and (min-width: 992px) {
-  .lo_que_ofrecemos_home .lo_que_ofrecemos_container .lo_que_ofrecemos h3 {
-    margin-top: 4rem;
-    font-size: 1.17em;
-    font-weight: bold;
-  }
+.lo_que_ofrecemos_home .lo_que_ofrecemos_container .lo_que_ofrecemos h3 {
+  margin: 1.5rem 0;
+  font-weight: bold;
+  font-size: x-large;
+  margin-bottom: 1.5rem;
+}
+.lo_que_ofrecemos_home .lo_que_ofrecemos_container .lo_que_ofrecemos p {
+  text-align: justify;
+  padding: 0 20px;
 }
 
 .proyectos_terminados_home {

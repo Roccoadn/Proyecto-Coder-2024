@@ -15,6 +15,9 @@
         margin-right: auto;
         iframe{
             width: 100%;
+            @include desktop{
+                height: 500px;
+            }
         }
     }
     h2{
@@ -30,19 +33,27 @@
         flex-direction: column;
 }
     form{
-        background-color: #333;
+        background-color: #D9E4E6;
         padding: 20px;
         border: #717380 solid 1px;
         border-radius: 14px;
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
         label{
             font-family: $font-principal;
             color: $color-secundario;
         }
-        .form-check{
-            label{
-                color: $color-principal;
-            }
-        }
+        button{
+            background-color: $color-secundario;
+            border: $color-principal 1px solid;
+        }             
+        button:hover{
+            background-color: #D9E4E6;
+            color: $color-secundario;
+            transition: 1.5s;
+            border: #333 1px solid;
+        }                     
     }
 }
 .contenedor_form{

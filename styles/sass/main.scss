@@ -65,16 +65,28 @@ h2{
             grid-template-rows: 1fr;
         }
         .lo_que_ofrecemos{
+            margin-left: auto;
+            margin-right: auto;
+            padding: 2rem;
+            width: 350px;
+            height: 300px;
+            border-radius: 30px;
+            background: #D9E4E6;
+            box-shadow: 15px 15px 30px #c2cdcf,
+            -15px -15px 30px #ffffff;           
             @include desktop {
                 padding: 0.5rem;
                 text-align: center;
-                h3{
-                    @include desktop {
-                        margin-top: 4rem;
-                        font-size: 1.17em;
-                        font-weight: bold;
-                    }
-                }
+            }
+            h3{
+                margin: 1.5rem 0;
+                font-weight: bold;
+                font-size: x-large;
+                margin-bottom: 1.5rem;              
+            }
+            p{
+                text-align: justify;
+                padding: 0 20px;
             }
         }
     }
