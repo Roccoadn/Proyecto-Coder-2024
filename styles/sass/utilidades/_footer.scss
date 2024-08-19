@@ -46,14 +46,15 @@ footer{
         justify-content: space-around;
         a{
             font-size: 2.5rem;
-            color: $color-principal;
+            color: $color-secundario;
             @include desktop{
                 font-size: 1.5rem;
                 margin: 0 20px;
             }
         }
          a:hover{
-            color: #a3a3a3;
+            color: #E0C80C;
+            transition-duration: 1s;
         }
     }
 }

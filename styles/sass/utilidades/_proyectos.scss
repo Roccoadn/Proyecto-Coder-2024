@@ -3,8 +3,17 @@
 /* Estilos proyectos.html */
 
 .hero-proyectos{
-    background-image: url(../../images/hero-proyectos.jpg);
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.3)
+       ),  url(../../images/hero-proyectos.jpg);
     @include hero;
+    h1{
+        color: rgb(255, 255, 255);
+        text-shadow: 5px 2px 2px rgba(8, 8, 8, 1),
+             7px 2px 2px rgba(8, 8, 8, 1);
+    }
 }
 
 .proyecto{
@@ -18,9 +27,6 @@
 .imagenes_proyecto{
     @include desktop{
         display: flex;
-    }
-    img{
-        border: 1px solid #eeeeee;
     }
     .img-num{
         display: none;
@@ -50,7 +56,7 @@
         display: flex;
     }
     p{
-        font-family: $font-principal;
+        font-family: $font-textos;
         font-weight: bolder;
         display: none;
         @include desktop{
