@@ -12241,7 +12241,7 @@ footer .redes_footer a:hover {
 /* media Q */
 /* heros */
 /* animacion sponsors */
-* {
+body {
   overflow-x: hidden;
 }
 
