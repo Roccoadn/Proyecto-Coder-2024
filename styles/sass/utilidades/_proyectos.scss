@@ -17,7 +17,7 @@
 }
 
 .proyecto{
-    margin: 15rem 0;
+    margin: 5rem 0;
     width: 100%;
     padding: 5%;
     img{
@@ -72,6 +72,8 @@
     h2{
         font-family: $font-secundaria;
         @include desktop{
+            font-weight: 900;
+            text-shadow: none;
             font-size: 1.5em;
             padding-left: 10%;
             text-align: start;
@@ -79,10 +81,4 @@
         }
     }
 }
-
-.segundo{ 
-    background-color: $color-principal;
-    color: $color-secundario;
-}
-
 /* Estilos proyectos.html */
