@@ -11932,7 +11932,7 @@ textarea.form-control-lg {
 /* animacion sponsors */
 /* Estilos nosotros.html */
 .sobre_nosotros {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../images/21.jpg);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../images/hero-nosotros.jpg);
   height: 100vh;
   background-position: center;
   background-size: cover;
@@ -11961,7 +11961,7 @@ textarea.form-control-lg {
 
 .nuestra_mision {
   text-align: center;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../images/20.jpg);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../images/nuestra-mision-background.jpg);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -12303,7 +12303,6 @@ h2, .h2 {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  font-family: "Anton", sans-serif;
   background-color: #1d1e20;
   backdrop-filter: var(0.52);
 }

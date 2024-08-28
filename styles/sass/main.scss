@@ -32,7 +32,7 @@ header{
 }
 
 h2{
-    font-family:"Anton", sans-serif;
+    font-family: $font-principal;
     text-shadow: 5px 2px 2px #E0C80C,
     7px 2px 2px #E0C80C;
     margin-bottom:5rem;
@@ -54,7 +54,6 @@ h2{
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    font-family: "Anton", sans-serif;
     background-color: #1d1e20;
     backdrop-filter: var(0.52);
     .flecha{
