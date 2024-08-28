@@ -11845,7 +11845,11 @@ textarea.form-control-lg {
   }
 }
 /* media Q */
+/* media Q */
 /* heros */
+/* heros */
+/* animacion flecha hero */
+/* animacion flecha hero */
 /* animacion sponsors */
 /* Estilos servicios.html */
 .nuestros_servicios {
@@ -11920,7 +11924,11 @@ textarea.form-control-lg {
 
 /* Estilos servicios.html */
 /* media Q */
+/* media Q */
 /* heros */
+/* heros */
+/* animacion flecha hero */
+/* animacion flecha hero */
 /* animacion sponsors */
 /* Estilos nosotros.html */
 .sobre_nosotros {
@@ -11983,14 +11991,18 @@ textarea.form-control-lg {
   text-align: center;
 }
 .nuestra_mision p {
-  width: 350px;
+  max-width: 350px;
   text-align: justify;
   font-weight: 600;
 }
 
 /* Estilos nosotros.html */
 /* media Q */
+/* media Q */
 /* heros */
+/* heros */
+/* animacion flecha hero */
+/* animacion flecha hero */
 /* animacion sponsors */
 /* Estilos contacto.html */
 .contacto {
@@ -12053,7 +12065,6 @@ textarea.form-control-lg {
   margin-right: auto;
 }
 .contenedor-info-y-form form label {
-  font-family: "Anton", sans-serif;
   color: #080808;
 }
 .contenedor-info-y-form form button {
@@ -12068,7 +12079,11 @@ textarea.form-control-lg {
 
 /* Estilos contacto.html */
 /* media Q */
+/* media Q */
 /* heros */
+/* heros */
+/* animacion flecha hero */
+/* animacion flecha hero */
 /* animacion sponsors */
 /* Estilos proyectos.html */
 .hero-proyectos {
@@ -12171,7 +12186,11 @@ textarea.form-control-lg {
 
 /* Estilos proyectos.html */
 /* media Q */
+/* media Q */
 /* heros */
+/* heros */
+/* animacion flecha hero */
+/* animacion flecha hero */
 /* animacion sponsors */
 footer {
   padding: 50px 0;
@@ -12238,7 +12257,11 @@ footer .redes_footer a:hover {
 }
 
 /* media Q */
+/* media Q */
 /* heros */
+/* heros */
+/* animacion flecha hero */
+/* animacion flecha hero */
 /* animacion sponsors */
 body {
   overflow-x: hidden;
@@ -12574,6 +12597,9 @@ h2, .h2 {
 .contacto-home .contenedor-info-y-form .info-contacto {
   padding-bottom: 2rem;
   color: white;
+}
+.contacto-home .contenedor-info-y-form .contenedor-form {
+  margin: 0 30px;
 }
 
 /*# sourceMappingURL=style.css.map */

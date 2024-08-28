@@ -1,4 +1,5 @@
 @import "variables";
+/* media Q */
 @mixin tablet {
     @media screen and (min-width: 768px){
         @content;        
@@ -13,6 +14,7 @@
 
 /* media Q */
 
+/* heros */
 @mixin hero{
     height: 100vh;
     background-position: center;
@@ -32,6 +34,7 @@
 
 /* heros */
 
+/* animacion flecha hero */
 @mixin flecha{
     text-shadow: 5px 2px 2px rgb(0, 0, 0),
         7px 2px 2px rgb(0, 0, 0);
@@ -41,10 +44,7 @@
     -webkit-animation:bounce-top 2s ease-in-out infinite;animation:bounce-top 2s ease-in-out infinite;
     @-webkit-keyframes bounce-top{0%{-webkit-transform:translateY(-45px);transform:translateY(-45px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in;opacity:1}24%{opacity:1}40%{-webkit-transform:translateY(-24px);transform:translateY(-24px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}65%{-webkit-transform:translateY(-12px);transform:translateY(-12px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}82%{-webkit-transform:translateY(-6px);transform:translateY(-6px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}93%{-webkit-transform:translateY(-4px);transform:translateY(-4px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}25%,55%,75%,87%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}100%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out;opacity:1}}@keyframes bounce-top{0%{-webkit-transform:translateY(-45px);transform:translateY(-45px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in;opacity:1}24%{opacity:1}40%{-webkit-transform:translateY(-24px);transform:translateY(-24px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}65%{-webkit-transform:translateY(-12px);transform:translateY(-12px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}82%{-webkit-transform:translateY(-6px);transform:translateY(-6px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}93%{-webkit-transform:translateY(-4px);transform:translateY(-4px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}25%,55%,75%,87%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}100%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out;opacity:1}}
 }
-
-
-
-
+/* animacion flecha hero */
 
 /* animacion sponsors */
 
@@ -55,7 +55,7 @@
         display: flex;
         width: 700px;
         overflow: hidden;
-        -webkit-mask-image: linear-gradient(90deg, transparent, #fff 20%, #fff 80%, transparent);
+        mask-image: linear-gradient(90deg, transparent, #fff 20%, #fff 80%, transparent);
     }
     .sponsors_home_container div{
         white-space: nowrap;
